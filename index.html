@@ -1,0 +1,484 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#7046b5">
+    <meta name="description" content="Campanha de prevenção ao bullying: respeito, empatia e acolhimento.">
+
+    <title>Juntos Contra o Bullying</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="Juntos Contra o Bullying.png" type="image/x-icon">
+</head>
+<body>
+
+    <!-- MENSAGEM DE BOAS-VINDAS -->
+    <div class="modal" id="welcomeModal"
+         role="dialog" aria-modal="true"
+         aria-labelledby="welcomeTitle">
+
+        <div class="modal-content">
+            <span class="modal-heart" aria-hidden="true">💜</span>
+            <h2 id="welcomeTitle">Você é importante!</h2>
+
+            <p>
+                Aqui, cada pessoa merece respeito, carinho e segurança.
+                Juntos, podemos transformar nossa escola em um lugar melhor.
+            </p>
+
+            <button class="btn btn-primary" id="welcomeButton" type="button">
+                Vamos espalhar o respeito!
+            </button>
+
+            <button class="close-modal" id="closeModal" type="button">
+                Fechar mensagem
+            </button>
+        </div>
+    </div>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <a class="brand" href="#inicio" aria-label="Página inicial">
+            <span class="brand-logo" aria-hidden="true">💜</span>
+
+            <span class="brand-text">
+                <strong>Juntos Contra</strong>
+                <span>o Bullying</span>
+            </span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+                type="button"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+                aria-controls="navigation">
+            ☰
+        </button>
+
+        <nav class="navigation" id="navigation" aria-label="Navegação principal">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre o bullying</a>
+            <a href="#ajuda">Peça ajuda</a>
+            <a href="#denuncia">Denúncia</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- CAPA: TEXTO E IMAGEM NA MESMA CAIXA -->
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <span class="eyebrow">
+                    💜 Campanha escolar de conscientização
+                </span>
+
+                <h1>
+                    Respeito não é favor.<br>
+                    <span>É um direito de todos!</span>
+                </h1>
+
+                <p>
+                    Bullying não é brincadeira. É hora de praticar a empatia,
+                    acolher as diferenças e construir uma escola onde
+                    todo mundo possa ser quem é.
+                </p>
+
+                <div class="hero-buttons">
+                    <a class="btn btn-primary" href="#sobre">
+                        Conheça a campanha
+                    </a>
+
+                    <a class="btn btn-outline" href="#ajuda">
+                        Preciso de ajuda
+                    </a>
+                </div>
+
+                <p class="hero-note">
+                    🤝 Sua atitude pode mudar a história de alguém.
+                </p>
+            </div>
+
+            <div class="hero-art">
+                <img
+                    src="Amizade em Cores Pastel.png"
+                    alt="Crianças de mãos dadas, representando amizade, inclusão e união."
+                >
+            </div>
+        </section>
+
+        <!-- VALORES DA CAMPANHA -->
+        <section class="values" aria-label="Valores da campanha">
+
+            <article>
+                <span>💜</span>
+                <div>
+                    <h3>Respeito</h3>
+                    <p>Trate todos com gentileza e valorize as diferenças.</p>
+                </div>
+            </article>
+
+            <article>
+                <span>🤝</span>
+                <div>
+                    <h3>Empatia</h3>
+                    <p>Coloque-se no lugar do outro e busque compreender.</p>
+                </div>
+            </article>
+
+            <article>
+                <span>🛡️</span>
+                <div>
+                    <h3>Coragem</h3>
+                    <p>Não fique em silêncio diante do bullying. Peça ajuda.</p>
+                </div>
+            </article>
+
+            <article>
+                <span>🫶</span>
+                <div>
+                    <h3>União</h3>
+                    <p>Juntos, podemos construir uma escola acolhedora.</p>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- SOBRE O BULLYING -->
+        <section class="section" id="sobre">
+
+            <div class="section-heading">
+                <span class="eyebrow">Informação é proteção</span>
+                <h2>Vamos entender o bullying?</h2>
+
+                <p>
+                    Bullying é uma intimidação intencional e repetitiva,
+                    marcada por desequilíbrio de poder. Um episódio isolado
+                    também merece atenção.
+                </p>
+            </div>
+
+            <div class="cards">
+
+                <article class="info-card">
+                    <span class="card-icon">🗣️</span>
+                    <h3>Bullying verbal</h3>
+                    <p>
+                        Apelidos ofensivos, insultos, humilhações e ameaças
+                        que machucam os sentimentos de alguém.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <span class="card-icon">🤜</span>
+                    <h3>Bullying físico</h3>
+                    <p>
+                        Bater, empurrar, chutar, machucar ou danificar
+                        intencionalmente os pertences de outra pessoa.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <span class="card-icon">💔</span>
+                    <h3>Bullying social</h3>
+                    <p>
+                        Excluir de propósito, espalhar rumores ou incentivar
+                        outras pessoas a isolar alguém.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <span class="card-icon">📱</span>
+                    <h3>Cyberbullying</h3>
+                    <p>
+                        Humilhar, ameaçar, expor ou perseguir alguém
+                        por redes sociais, mensagens ou jogos online.
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="attention-box">
+                <span>💡</span>
+                <p>
+                    <strong>Importante:</strong> ninguém merece ser humilhado.
+                    Guarde registros se for seguro e procure um adulto
+                    de confiança.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- PEÇA AJUDA -->
+        <section class="help-section" id="ajuda">
+
+            <div class="help-content">
+                <span class="eyebrow">Você não está sozinho(a)</span>
+                <h2>Precisa de ajuda? Estamos aqui para você.</h2>
+
+                <p>
+                    Se você sofre bullying ou presenciou uma situação,
+                    procure alguém de confiança. Você merece ser ouvido,
+                    respeitado e protegido.
+                </p>
+
+                <div class="help-cards">
+
+                    <article class="help-card">
+                        <span class="help-icon">🚨</span>
+                        <h3>Polícia Militar</h3>
+                        <p>
+                            Perigo imediato, agressão em andamento
+                            ou ameaça grave.
+                        </p>
+                        <a class="help-number" href="tel:190">190</a>
+                        <p class="help-detail">
+                            Emergências — atendimento 24 horas.
+                        </p>
+                    </article>
+
+                    <article class="help-card">
+                        <span class="help-icon">🛡️</span>
+                        <h3>Disque 100</h3>
+                        <p>
+                            Denúncias de violações de direitos humanos,
+                            incluindo violência contra crianças e adolescentes.
+                        </p>
+                        <a class="help-number" href="tel:100">100</a>
+                        <p class="help-detail">
+                            Gratuito, 24 horas, todos os dias.
+                        </p>
+                        <a class="help-link"
+                           href="https://wa.me/5561996110100"
+                           target="_blank" rel="noopener noreferrer">
+                            WhatsApp: (61) 99611-0100
+                        </a>
+                    </article>
+
+                    <article class="help-card">
+                        <span class="help-icon">💜</span>
+                        <h3>CVV — Apoio emocional</h3>
+                        <p>
+                            Para quem precisa conversar em momentos
+                            de sofrimento emocional.
+                        </p>
+                        <a class="help-number" href="tel:188">188</a>
+                        <p class="help-detail">
+                            Gratuito, 24 horas, todos os dias.
+                        </p>
+                        <a class="help-link"
+                           href="https://www.cvv.org.br/"
+                           target="_blank" rel="noopener noreferrer">
+                            Acessar o site do CVV
+                        </a>
+                    </article>
+
+                    <article class="help-card">
+                        <span class="help-icon">🏫</span>
+                        <h3>Conselho Tutelar</h3>
+                        <p>
+                            Proteção dos direitos de crianças e adolescentes.
+                            Procure o Conselho Tutelar do seu município.
+                        </p>
+                        <a class="help-link"
+                           href="https://www.gov.br/pt-br/servicos"
+                           target="_blank" rel="noopener noreferrer">
+                            Consultar serviços oficiais
+                        </a>
+                    </article>
+
+                    <article class="help-card">
+                        <span class="help-icon">🏥</span>
+                        <h3>SUS — UBS ou CAPS</h3>
+                        <p>
+                            Acolhimento e orientação para cuidar
+                            da saúde emocional.
+                        </p>
+                        <a class="help-link"
+                           href="https://www.gov.br/saude/pt-br"
+                           target="_blank" rel="noopener noreferrer">
+                            Ministério da Saúde
+                        </a>
+                    </article>
+
+                    <article class="help-card">
+                        <span class="help-icon">🤝</span>
+                        <h3>Escola ou faculdade</h3>
+                        <p>
+                            Converse com a coordenação, a direção,
+                            um professor ou a equipe de orientação.
+                        </p>
+                        <a class="help-link" href="#contato">
+                            Quero pedir ajuda
+                        </a>
+                    </article>
+
+                </div>
+
+                <p class="help-warning">
+                    Se você estiver em perigo imediato, ligue 190.
+                    Não espere uma resposta pelo formulário deste site.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- DENÚNCIA -->
+        <section class="section report-section" id="denuncia">
+
+            <div class="section-heading">
+                <span class="eyebrow">Sua voz importa</span>
+                <h2>Não se cale diante do bullying.</h2>
+
+                <p>
+                    Relatar uma situação é um passo para buscar proteção.
+                    Você pode pedir ajuda mesmo que não saiba como classificar
+                    o que aconteceu.
+                </p>
+            </div>
+
+            <div class="report-box">
+                <span class="report-icon">🛡️</span>
+                <h3>Conte a um adulto responsável</h3>
+
+                <p>
+                    Procure a coordenação, a direção ou um profissional
+                    de confiança. Explique o que aconteceu, onde ocorreu
+                    e se alguém está em risco.
+                </p>
+
+                <a class="btn btn-primary" href="#ajuda">
+                    Ver contatos de ajuda
+                </a>
+            </div>
+
+            <p class="privacy-note">
+                Não publique nomes, fotos ou acusações de colegas no site
+                ou nas redes sociais. Proteja a privacidade de todos.
+            </p>
+
+        </section>
+
+        <!-- CONTATO E FORMULÁRIO -->
+        <section class="section contact-section" id="contato">
+
+            <div class="section-heading">
+                <span class="eyebrow">Um espaço de acolhimento</span>
+                <h2>Precisa conversar?</h2>
+
+                <p>
+                    Preencha os campos abaixo para continuar.
+                    Não inclua dados pessoais.
+                </p>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+
+                <label for="contactReason">
+                    Sobre o que você gostaria de conversar?
+                </label>
+
+                <select id="contactReason" name="assunto" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="Estou passando por isso">
+                        Estou passando por isso
+                    </option>
+                    <option value="Vi alguém sofrendo bullying">
+                        Vi alguém sofrendo bullying
+                    </option>
+                    <option value="Quero tirar uma dúvida">
+                        Quero tirar uma dúvida
+                    </option>
+                    <option value="Outro assunto">
+                        Outro assunto
+                    </option>
+                </select>
+
+                <label for="contactMessage">
+                    Sua mensagem
+                </label>
+
+                <textarea
+                    id="contactMessage"
+                    name="mensagem"
+                    rows="5"
+                    maxlength="1000"
+                    required
+                    placeholder="Escreva aqui o que você gostaria de conversar..."
+                ></textarea>
+
+                <button class="btn btn-primary" type="submit">
+                    Enviar mensagem
+                </button>
+
+                <!-- A mensagem aparece somente após o envio do formulário -->
+                <div
+                    class="form-notice"
+                    id="formNotice"
+                    role="status"
+                    aria-live="polite"
+                    hidden
+                ></div>
+
+                <p class="privacy-note">
+                    Este formulário ainda é demonstrativo e não envia
+                    mensagens para uma equipe.
+                </p>
+
+            </form>
+
+        </section>
+
+        <!-- MENSAGEM FINAL -->
+        <section class="final-message">
+            <h2>
+                Espalhe respeito. Compartilhe empatia. Transforme vidas. 💜
+            </h2>
+            <p>O bullying não define quem você é. Você merece respeito!</p>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+                <a class="brand footer-logo" href="#inicio">
+                    <span class="brand-logo" aria-hidden="true">💜</span>
+                    <span class="brand-text">
+                        <strong>Juntos Contra</strong>
+                        <span>o Bullying</span>
+                    </span>
+                </a>
+
+                <p>
+                    Uma escola com mais respeito, acolhimento e empatia
+                    começa com pequenas atitudes.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Como podemos ajudar?</h3>
+                <a href="#sobre">📚 Informações sobre o bullying</a>
+                <a href="#ajuda">🤝 Peça ajuda</a>
+                <a href="#denuncia">🛡️ Denúncia</a>
+                <a href="#contato">💬 Precisa conversar?</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© <span id="currentYear"></span> Juntos Contra o Bullying</p>
+            <p>Feito com 💜 para uma escola melhor.</p>
+            <a href="#inicio">Voltar ao topo ↑</a>
+        </div>
+
+    </footer>
+
+</body>
+</html>
